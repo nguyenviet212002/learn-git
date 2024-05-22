@@ -39,11 +39,12 @@
                         <button>search</button>
                     </form>
                     <?php
-                    foreach ($product_list as $data) {
+                    var_dump(_FOLDER_ROOT_);
+                    foreach ($sanpham as $data) {
                     ?>
                         <tr>
                             <td>
-                                <p> <?php echo ($data['id']) ?></p>
+                                <p> <?php echo ($data['id_sanpham']) ?></p>
                             </td>
                             <td>
                                 <p> <?php echo ($data['ten_san_pham']) ?></p>
@@ -52,9 +53,9 @@
                                 <p> <?php echo ($data['gia_san_pham']) ?></p>
                             </td>
                             <td>
-                                <a href="<?php echo _FOLDER_ROOT_ . '/san-pham/' ?><?php echo $data['id'] ?>">Edit</a>
+                                <a href="<?php echo _FOLDER_ROOT_ . '/san-pham/' ?><?php echo $data['id_sanpham'] ?>">Edit</a>
                             </td>
-                            <td><a href="<?php echo _FOLDER_ROOT_ . '/xoa-san-pham/' ?><?php echo $data['id'] ?>">xoa</a></td>
+                            <td><a href="<?php echo _FOLDER_ROOT_ . '/xoa-san-pham/' ?><?php echo $data['id_sanpham'] ?>">xoa</a></td>
                         </tr>
                     <?php  }
                     ?>
