@@ -10,12 +10,7 @@ class Home extends Controller {
    {
       $this->data['sanpham'] = $this->model->getAll();
       
-      $view = $this->render('home/home', $this->data);
+      $view = $this->render('clients/home', $this->data);
    }
-   function Index()
-   {
-      $this->data['sanpham'] = $this->model->getAll();
-      
-      $view = $this->render('home/home', $this->data);
-   }
+ 
 }   
