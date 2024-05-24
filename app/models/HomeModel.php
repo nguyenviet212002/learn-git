@@ -9,4 +9,3 @@ class HomeModel extends Database
         return $this->select(self::TABLE);
     }
 }
-// viet an lon
