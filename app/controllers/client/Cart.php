@@ -10,5 +10,9 @@ class Cart extends Controller {
    {
       $view = $this->render('clients/cart');
    }
+   function Test()
+   {
+      $view = $this->render('Test');
+   }
  
 }   
