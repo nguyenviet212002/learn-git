@@ -1,16 +1,17 @@
-<?php 
+<?php
 
-class Home extends Controller {
+class Home extends Controller
+{
    public $model;
    public $data;
-   public function __construct() {
-    $this->model = $this->model('HomeModel');
+   public function __construct()
+   {
+      $this->model = $this->model('HomeModel');
    }
    function Home()
    {
       $this->data['sanpham'] = $this->model->getAll();
-      
+
       $view = $this->render('clients/home', $this->data);
    }
- 
-}   
+}
