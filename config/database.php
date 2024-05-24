@@ -9,13 +9,13 @@ class ConnectDB
     private $connect;
     public function connect()
     {
-        $this->connect = new mysqli(self::HOST, self::USERS, self::PASSWORD,self::DB_NAME);
+        $this->connect = new mysqli(self::HOST, self::USERS, self::PASSWORD, self::DB_NAME);
         // Check connection
         if ($this->connect->connect_errno) {
             echo "Failed to connect to MySQL: " . $this->connect->connect_error;
             exit();
         }
-        
+
         return $this->connect;
         // $this->connect = new mysqli(self::HOST, self::USERS, self::PASSWORD,self::DB_NAME);
         // mysqli_set_charset($this->connect,'utf8');
@@ -24,5 +24,4 @@ class ConnectDB
         //     die("Connection failed: " . $this->connect->connect_error);
         // }
     }
-   
 }
