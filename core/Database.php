@@ -144,7 +144,7 @@ class Database extends ConnectDB
         $str_value = implode(',', $str_value);
         $insert = "INSERT INTO $table ($key) VALUES ($str_value)";
         $query = $this->_query($insert);
-        echo ('them du lieu thanh cong');
+        // echo ('them du lieu thanh cong');
     }
 
     // tim kiem theo id
